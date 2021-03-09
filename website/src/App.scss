@@ -1,0 +1,42 @@
+// Imports
+@import "~bootstrap/scss/bootstrap";
+
+// ------ COLORS ------
+$green: #54B689;
+$dark-blue: #111821;
+$light-blue: #1d2b3a;
+
+// ------ Constants ------
+$sidebar-width: 280px;
+
+// ------ Global Styles ------
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  -webkit-font-smoothing: antialiased;
+  color: white;
+}
+
+// ------ App.js ------
+.app-wrapper {
+  display: flex;
+}
+
+.sidebar-section {
+  position: fixed;
+  padding: 1.5em;
+  height: 100vh;
+  width: $sidebar-width;
+  top: 0;
+  left: 0;
+  background-color: $light-blue;
+}
+
+.content-section {
+  margin-left: $sidebar-width;
+  background-color: $dark-blue;
+  padding-top: 50px;
+  height: 100vh;
+  width: 100%;
+}

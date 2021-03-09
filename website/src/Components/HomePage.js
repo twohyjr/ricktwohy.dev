@@ -1,9 +1,15 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 const HomePage = () => {
     return (
         <div>
-            TODO: Create Home Page
+            This is the Home page
+            <br />
+            <Link to="/contact">Contact</Link>
+            <br />
+            <Link to="/woodshop">Woodshop</Link>
         </div>
     )
 }
