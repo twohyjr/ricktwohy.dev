@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+
+import ContactPage from './Components/ContactPage'
+import HomePage from './Components/HomePage'
+import WoodshopPage from './Components/WoodshopPage'
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Rick Twohy
-        </a>
-      </header>
-    </div>
+    <Router>
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/home">
+            <HomePage />
+          </Route>
+          <Route path="/contact">
+            <ContactPage />
+          </Route>
+          <Route path="/woodshop">
+            <WoodshopPage />
+          </Route>
+        </Switch>
+    </Router>
+
   );
 }
 
