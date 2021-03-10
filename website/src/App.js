@@ -15,32 +15,32 @@ import {
 
 function App() {
   return (
-    <div class="app-wrapper">
-      <section className="sidebar-section">
-        <Sidebar />
-      </section>
+    <Router>
+      <div className="app-wrapper">
+        <section className="sidebar-section">
+          <Sidebar />
+        </section>
 
-      <section className="content-section">
-        <Container>
-          <Router>
-              <Switch>
-                <Route exact path="/">
-                  <HomePage />
-                </Route>
-                <Route path="/home">
-                  <HomePage />
-                </Route>
-                <Route path="/contact">
-                  <ContactPage />
-                </Route>
-                <Route path="/woodshop">
-                  <WoodshopPage />
-                </Route>
-              </Switch>
-          </Router>
-        </Container>
-      </section>
-    </div>
+        <section className="content-section">
+          <Container>
+            <Switch>
+              <Route exact path="/">
+                <HomePage />
+              </Route>
+              <Route path="/home">
+                <HomePage />
+              </Route>
+              <Route path="/contact">
+                <ContactPage />
+              </Route>
+              <Route path="/woodshop">
+                <WoodshopPage />
+              </Route>
+            </Switch>
+          </Container>
+        </section>
+      </div>
+    </Router>
   );
 }
 
