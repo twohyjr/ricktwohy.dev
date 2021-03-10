@@ -15,16 +15,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 import ReactTooltip from 'react-tooltip';
-import { Tooltip } from 'react-bootstrap'
 
 const Sidebar = () => {
-    let activeSiteLink = "home";
-
-    function getActive(link) {
-        if (activeSiteLink === link) { return "active" }
-        return "";
-    }
-
     return (
         <div className="sidebar">
             <ReactTooltip />
@@ -48,7 +40,6 @@ const Sidebar = () => {
                 </li>
             </ul>
             <hr />
-
             <nav className="site-nav">
                 <ul>
                     <li>
@@ -62,15 +53,18 @@ const Sidebar = () => {
                         </NavLink>
                     </li>
                     <li>
+                        <NavLink to='/resume' activeClassName='is-active' className="site-link">
+                            <FontAwesomeIcon icon={faFileAlt} fixedWidth /> Resume
+                        </NavLink>
+                    </li>
+                    <li>
                         <NavLink to="/contact" activeClassName='is-active' className="site-link">
-                            <FontAwesomeIcon icon={faFileAlt} fixedWidth /> Contact
+                            <FontAwesomeIcon icon={faEnvelopeOpenText} fixedWidth /> Contact
                         </NavLink>
                     </li>
                 </ul>
-
             </nav>
         </div>
-
     )
 }
 

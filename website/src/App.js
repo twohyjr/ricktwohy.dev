@@ -1,9 +1,10 @@
-import './App.scss';
+import './Style.scss';
 
 import ContactPage from './Components/ContactPage'
 import HomePage from './Components/HomePage'
 import WoodshopPage from './Components/WoodshopPage'
 import Sidebar from './Components/Sidebar';
+import ResumePage from './Components/ResumePage';
 
 import { Container } from 'react-bootstrap'
 
@@ -30,11 +31,14 @@ function App() {
               <Route path="/home">
                 <HomePage />
               </Route>
-              <Route path="/contact">
-                <ContactPage />
-              </Route>
               <Route path="/woodshop">
                 <WoodshopPage />
+              </Route>
+              <Route path="/resume">
+                <ResumePage />
+              </Route>
+              <Route path="/contact">
+                <ContactPage />
               </Route>
             </Switch>
           </Container>
