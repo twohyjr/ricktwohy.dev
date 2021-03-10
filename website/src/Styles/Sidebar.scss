@@ -21,22 +21,24 @@
     padding: 0;
     display: flex;
     list-style: none;
-    justify-content: center;
-    margin: 0;
+    justify-content: space-between;
+    margin: 0 25px;
     color: $green;
+
+    a {
+        width: 32px;
+    }
   }
   
   .social-list-item {
     background: $green;
     border-radius: 50%;
+    padding: 0;
     padding-top: 4px;
     width: 32px;
     height: 32px;
-    margin: 10px;
-  
-    a {
-      color: white;
-    }
+    margin-right: 10px;
+    color: white;
   }
   
   hr {

@@ -26,18 +26,26 @@ const Sidebar = () => {
                 Hi, my name is Rick Twohy and i'm a senior software engineer.  Welcome to my personal Website.
             </p>
             <ul className="social-links">
-                <li className="social-list-item" data-tip="GitHub" label="GitHub">
-                    <a href="https://github.com/twohyjr"><FontAwesomeIcon icon={faGithub} fixedWidth /></a>
-                </li>
-                <li className="social-list-item" data-tip="LinkedIn" label="LinkedIn">
-                    <a href="https://www.linkedin.com/in/twohyjr/"><FontAwesomeIcon icon={faLinkedin} fixedWidth /></a>
-                </li>
-                <li className="social-list-item" data-tip="CodeWars" label="CodeWars">
-                    <a href="https://www.codewars.com/users/twohyjr"><FontAwesomeIcon icon={faCode} fixedWidth /></a>
-                </li>
-                <li className="social-list-item" data-tip="Youtube" label="Youtube">
-                    <a href="https://www.youtube.com/channel/UCh1CHiHhUzsE9C0qfxWiXxA"><FontAwesomeIcon icon={faYoutube} fixedWidth /></a>
-                </li>
+                <a href="https://github.com/twohyjr" target="_blank" rel="noreferrer">
+                    <li className="social-list-item" data-tip="GitHub" label="GitHub">
+                        <FontAwesomeIcon icon={faGithub} fixedWidth />
+                    </li>
+                </a>
+                <a href="https://www.linkedin.com/in/twohyjr/" target="_blank" rel="noreferrer">
+                    <li className="social-list-item" data-tip="LinkedIn" label="LinkedIn">
+                        <FontAwesomeIcon icon={faLinkedin} fixedWidth />
+                    </li>
+                </a>
+                <a href="https://www.codewars.com/users/twohyjr" target="_blank" rel="noreferrer">
+                    <li className="social-list-item" data-tip="CodeWars" label="CodeWars">
+                        <FontAwesomeIcon icon={faCode} fixedWidth />
+                    </li>
+                </a>
+                <a href="https://www.youtube.com/channel/UCh1CHiHhUzsE9C0qfxWiXxA" target="_blank" rel="noreferrer">
+                    <li className="social-list-item" data-tip="Youtube" label="Youtube">
+                        <FontAwesomeIcon icon={faYoutube} fixedWidth />
+                    </li>
+                </a>
             </ul>
             <hr />
             <nav className="site-nav">
