@@ -20,7 +20,6 @@ import {
   faNode,
   faAws,
   faDocker,
-  faGit,
   faJenkins,
   faJsSquare,
 } from "@fortawesome/free-brands-svg-icons";
@@ -31,8 +30,19 @@ const TechCards = () => {
       {/* Code Languages */}
       <Col lg="3" className="language-card">
         <div class="techs">
-          <img src={golang} title="Golang" className="tech-icon fa-golang" />
-          <img src={cpp} width="28" title="Golang" className="tech-icon" />
+          <img
+            src={golang}
+            title="Golang"
+            className="tech-icon fa-golang"
+            alt="Golang"
+          />
+          <img
+            src={cpp}
+            width="28"
+            title="C++"
+            className="tech-icon"
+            alt="C++"
+          />
 
           <FontAwesomeIcon
             icon={faJsSquare}
@@ -64,9 +74,27 @@ const TechCards = () => {
       {/* Computer Graphics */}
       <Col lg="4" className="language-card">
         <div class="techs">
-          <img src={metal} width="30" title="Metal" className="tech-icon" />
-          <img src={opengl} width="50" title="OpenGL" className="tech-icon" />
-          <img src={cpp} width="28" title="C++" className="tech-icon" />
+          <img
+            src={metal}
+            width="30"
+            title="Metal"
+            className="tech-icon"
+            alt="Metal"
+          />
+          <img
+            src={opengl}
+            width="50"
+            title="OpenGL"
+            className="tech-icon"
+            alt="OpenGL"
+          />
+          <img
+            src={cpp}
+            width="28"
+            title="C++"
+            className="tech-icon"
+            alt="C++"
+          />
         </div>
         <h4>Computer Graphics</h4>
         <p>
@@ -81,11 +109,28 @@ const TechCards = () => {
       {/* Backend & Apis */}
       <Col lg="3" className="language-card">
         <div class="techs">
-          <img src={golang} title="Golang" className="tech-icon fa-golang" />
+          <img
+            src={golang}
+            title="Golang"
+            className="tech-icon fa-golang"
+            alt="Golang"
+          />
           <FontAwesomeIcon
             icon={faNode}
             size="2x"
             title="NodeJs"
+            className="tech-icon"
+          />
+          <FontAwesomeIcon
+            icon={faDocker}
+            size="2x"
+            title="Docker"
+            className="tech-icon"
+          />
+          <FontAwesomeIcon
+            icon={faAws}
+            size="2x"
+            title="AWS"
             className="tech-icon"
           />
         </div>
@@ -148,8 +193,15 @@ const TechCards = () => {
             width="30"
             title="Terraform"
             className="tech-icon"
+            alt="Terraform"
           />
-          <img src={bash} width="30" title="Bash" className="tech-icon" />
+          <img
+            src={bash}
+            width="30"
+            title="Bash"
+            className="tech-icon"
+            alt="Bash"
+          />
           <FontAwesomeIcon
             icon={faJenkins}
             size="2x"
